@@ -1,0 +1,286 @@
+:root {
+  /* 主色调 - 更明亮的橙色系 */
+  --vp-c-brand-1: #FF8C42;
+  --vp-c-brand-2: #FF7A28;
+  --vp-c-brand-3: #E6681A;
+  --vp-c-brand-soft: rgba(255, 140, 66, 0.16);
+  
+  /* 链接颜色 */
+  --vp-c-text-accent-1: #FF8C42;
+  --vp-c-text-accent-2: #FF7A28;
+  
+  /* 按钮颜色 */
+  --vp-button-brand-border: #FF8C42;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #FF8C42;
+  --vp-button-brand-hover-border: #FF7A28;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #FF7A28;
+  --vp-button-brand-active-border: #E6681A;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #E6681A;
+  
+  /* 导航栏激活状态 */
+  --vp-c-text-1: #213547;
+  --vp-c-text-2: #476582;
+  --vp-c-text-3: #7c8b9a;
+  
+  /* 侧边栏激活状态 */
+  --vp-sidebar-bg-color: #ffffff;
+}
+
+/* 深色模式适配 */
+.dark {
+  --vp-c-brand-1: #FFA366;
+  --vp-c-brand-2: #FF9652;
+  --vp-c-brand-3: #FF8C42;
+  --vp-c-brand-soft: rgba(255, 163, 102, 0.18);
+  
+  --vp-c-text-accent-1: #FFA366;
+  --vp-c-text-accent-2: #FF9652;
+  
+  --vp-button-brand-border: #FFA366;
+  --vp-button-brand-bg: #FFA366;
+  --vp-button-brand-hover-border: #FF9652;
+  --vp-button-brand-hover-bg: #FF9652;
+  --vp-button-brand-active-border: #FF8C42;
+  --vp-button-brand-active-bg: #FF8C42;
+}
+
+/* 导航栏样式强制覆盖 */
+.VPNavBarTitle .title,
+.VPNavBar .title,
+.VPNavBarMenu .VPNavBarMenuLink,
+.VPNavBarMenuLink,
+.VPSidebarItem .text,
+.VPSidebarItem.is-active .text,
+.VPNavBarMenuGroup .title {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600;
+}
+
+/* 侧边栏导航激活状态 */
+.VPSidebarItem.is-active {
+  background-color: var(--vp-c-brand-soft) !important;
+}
+
+.VPSidebarItem.is-active .text {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600;
+}
+
+/* 首页标题样式 - 强制覆盖 */
+.VPHero .name,
+.VPHero .text,
+.VPHero h1,
+.VPHero .title {
+  color: var(--vp-c-brand-1) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--vp-c-brand-1) !important;
+}
+
+/* Hero 主标题 - 更具体的选择器 */
+.VPHero .VPHeroInfo .name,
+.VPHero .VPHeroInfo h1,
+.VPHero .clip {
+  color: var(--vp-c-brand-1) !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: var(--vp-c-brand-1) !important;
+}
+
+/* 语言切换菜单 */
+.VPNavBarTranslations .title,
+.VPNavBarTranslations .text,
+.VPFlyout .title,
+.VPMenuGroup .title,
+.VPMenuLink .link {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 首页hero按钮样式 */
+.VPHero .action .brand {
+  background-color: var(--vp-c-brand-1) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  color: white !important;
+}
+
+.VPHero .action .brand:hover {
+  background-color: var(--vp-c-brand-2) !important;
+  border-color: var(--vp-c-brand-2) !important;
+  color: white !important;
+}
+
+/* 左侧导航选中状态 */
+.VPSidebarItem.is-active .text,
+.VPSidebarItem.is-active .link {
+  color: var(--vp-c-brand-1) !important;
+}
+
+.VPSidebarItem.is-active {
+  background-color: var(--vp-c-brand-soft) !important;
+}
+
+/* 右侧目录指示条 */
+.VPDocAsideOutline .outline-marker {
+  background-color: var(--vp-c-brand-1) !important;
+}
+
+.VPDocAsideOutline .outline-link.active {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 底部翻页按钮 */
+.VPDocFooter .prev-next .pager-link,
+.VPPrevNext .pager-link {
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+.VPDocFooter .prev-next .pager-link .title,
+.VPPrevNext .pager-link .title {
+  color: var(--vp-c-brand-1) !important;
+}
+
+.VPDocFooter .prev-next .pager-link:hover,
+.VPPrevNext .pager-link:hover {
+  border-color: var(--vp-c-brand-2) !important;
+}
+
+.VPDocFooter .prev-next .pager-link:hover .title,
+.VPPrevNext .pager-link:hover .title {
+  color: var(--vp-c-brand-2) !important;
+}
+
+/* 强制覆盖所有标题和链接颜色 */
+h1, h2, h3, h4, h5, h6,
+.VPContent h1,
+.VPContent h2,
+.VPContent h3,
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.VPNavBarMenu a,
+.VPNavBarMenuLink {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 文档内容链接 */
+.vp-doc a,
+.VPContent a,
+.VPDoc a,
+.content a {
+  color: var(--vp-c-brand-1) !important;
+}
+
+.vp-doc a:hover,
+.VPContent a:hover,
+.VPDoc a:hover,
+.content a:hover {
+  color: var(--vp-c-brand-2) !important;
+}
+
+/* 文档代码块中的链接 */
+.vp-doc code a,
+.VPContent code a {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 文档列表项 */
+.vp-doc li > a,
+.VPContent li > a {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 文档内联代码 */
+.vp-doc :not(pre) > code,
+.VPContent :not(pre) > code {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 首页特性图标颜色 */
+.VPFeature .icon {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 链接悬停效果 */
+a:hover {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 代码块滚动条样式 */
+.vp-code-group .tabs ::-webkit-scrollbar-thumb {
+  background-color: var(--vp-c-brand-soft);
+}
+
+/* 搜索框焦点样式 */
+.DocSearch-Button:focus {
+  box-shadow: 0 0 0 2px var(--vp-c-brand-soft);
+}
+
+/* 目录激活项样式 */
+.VPDocAsideOutline .outline-link.active {
+  color: var(--vp-c-brand-1);
+  border-left-color: var(--vp-c-brand-1);
+}
+
+/* 左侧导航默认状态保持黑色 */
+.VPSidebar .VPSidebarItem .link,
+.VPSidebar .VPSidebarItem .text,
+.VPSidebarItem .link,
+.VPSidebarItem .text {
+  color: var(--vp-c-text-1) !important;
+}
+
+/* 左侧导航组标题保持橙色 */
+.VPSidebarGroup .title {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 左侧导航悬停状态 */
+.VPSidebar .VPSidebarItem:hover .link,
+.VPSidebar .VPSidebarItem:hover .text,
+.VPSidebarItem:hover .link,
+.VPSidebarItem:hover .text {
+  color: var(--vp-c-brand-2) !important;
+}
+
+/* 左侧导航激活状态背景 */
+.VPSidebar .VPSidebarItem.is-active,
+.VPSidebarItem.is-active {
+  background-color: var(--vp-c-brand-soft) !important;
+}
+
+/* 左侧导航激活状态文字 - 强制橙色 */
+.VPSidebar .VPSidebarItem.is-active .link,
+.VPSidebar .VPSidebarItem.is-active .text,
+.VPSidebarItem.is-active .link,
+.VPSidebarItem.is-active .text,
+.VPSidebarItem.is-active a,
+.VPSidebar .VPSidebarItem.is-active a {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600 !important;
+}
+
+/* 额外的选中状态覆盖 */
+.VPSidebarItem.is-active,
+.VPSidebarItem.is-active *,
+.VPSidebar .is-active,
+.VPSidebar .is-active * {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 针对具体的active链接样式 */
+.VPLink.link.active,
+.VPLink.link.active .link-text,
+a.VPLink.link.active,
+a.VPLink.link.active .link-text {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 移除强制覆盖，保持默认颜色 */
+
+/* 左侧导航展开/收起图标 */
+.VPSidebarItem .caret,
+.VPSidebarGroup .caret {
+  color: var(--vp-c-brand-1) !important;
+}
