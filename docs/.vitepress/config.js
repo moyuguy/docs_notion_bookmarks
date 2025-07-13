@@ -15,10 +15,10 @@ export default {
     ['meta', { name: 'author', content: 'moyuguy' }]
   ],
 
-  base: '/notion_bookmarks/',
+  base: '/docs_notion_bookmarks/',
 
   sitemap: {
-    hostname: 'https://moyuguy.github.io/notion_bookmarks'
+    hostname: 'https://moyuguy.github.io/docs_notion_bookmarks'
   },
   
   themeConfig: {
