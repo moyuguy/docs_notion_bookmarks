@@ -1,4 +1,5 @@
 export default {
+  base: '/docs_notion_bookmarks/',
   title: "Notion Bookmarks",
   description: "一个优雅的 Notion 个人导航站",
   lang: 'zh-CN',
