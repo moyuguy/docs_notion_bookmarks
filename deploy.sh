@@ -14,7 +14,7 @@ cd docs/.vitepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy' || true
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:moyuguy/docs_notion_bookmarks.git main:gh-pages
