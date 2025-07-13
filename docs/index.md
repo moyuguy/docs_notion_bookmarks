@@ -6,12 +6,15 @@ hero:
   text: "一个优雅的 Notion 个人导航站"
   tagline: 用 Notion 数据库驱动，Vercel 免费部署，打造属于你自己的、独一无二的浏览器主页。
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: Notion Bookmarks
   actions:
     - theme: brand
       text: 快速上手
       link: /guide/getting-started
+    - theme: alt
+      text: 查看示例
+      link: https://portal.ezho.top/
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/moyuguy/notion_bookmarks

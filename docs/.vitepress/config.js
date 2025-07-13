@@ -6,73 +6,42 @@ export default {
   // 指定自定义主题
   theme: './theme',
   
-  locales: {
-    '/': {
-      label: '简体中文',
-      lang: 'zh-CN'
-    },
-    '/en/': {
-      label: 'English',
-      lang: 'en-US',
-      title: "Notion Bookmarks",
-      description: "An elegant personal navigation site powered by Notion"
-    }
-  },
+  // 配置 favicon
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }]
+  ],
   
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
     
-    localeLinks: {
-      text: '语言',
-      items: [
-        { text: '简体中文', link: '/' },
-        { text: 'English', link: '/en/' }
+    nav: [
+      { text: '主页', link: '/' },
+      { text: '文档', link: '/guide/getting-started' },
+      { text: '更新日志', link: '/changelog' },
+      { text: 'GitHub', link: 'https://github.com/moyuguy/notion_bookmarks' }
+    ],
+
+    sidebar: {
+      '/guide/': [
+        {
+          text: '指南',
+          items: [
+            { text: '快速上手', link: '/guide/getting-started' },
+            { text: '收集网站', link: '/guide/collecting-sites' },
+            { text: '分类与标签', link: '/guide/categories-and-tags' },
+            { text: '数据迁移', link: '/guide/migrating-data' },
+            { text: '网站配置', link: '/guide/website-configuration' }
+          ]
+        },
+        {
+          text: '其他',
+          items: [
+            { text: '常见问题', link: '/guide/faq' }
+          ]
+        }
       ]
-    },
-    
-    locales: {
-      '/': {
-         nav: [
-           { text: '主页', link: '/' },
-           { text: '文档', link: '/guide/getting-started' },
-           { text: '更新日志', link: '/changelog' },
-           { text: 'GitHub', link: 'https://github.com/moyuguy/notion_bookmarks' }
-         ],
-        sidebar: {
-          '/guide/': [
-            {
-              text: '指南',
-              items: [
-                { text: '快速上手', link: '/guide/getting-started' },
-                { text: '收集网站', link: '/guide/collecting-sites' },
-                { text: '数据迁移', link: '/guide/migrating-data' },
-                { text: '分类与标签', link: '/guide/categories-and-tags' }
-              ]
-            }
-          ]
-        }
-      },
-      '/en/': {
-         nav: [
-           { text: 'Home', link: '/en/' },
-           { text: 'Guide', link: '/en/guide/getting-started' },
-           { text: 'Changelog', link: '/en/changelog' },
-           { text: 'GitHub', link: 'https://github.com/moyuguy/notion_bookmarks' }
-         ],
-        sidebar: {
-          '/en/guide/': [
-            {
-              text: 'Guide',
-              items: [
-                { text: 'Getting Started', link: '/en/guide/getting-started' },
-                { text: 'Collecting Sites', link: '/en/guide/collecting-sites' },
-                { text: 'Data Migration', link: '/en/guide/migrating-data' },
-                { text: 'Categories & Tags', link: '/en/guide/categories-and-tags' }
-              ]
-            }
-          ]
-        }
-      }
     },
     
     socialLinks: [

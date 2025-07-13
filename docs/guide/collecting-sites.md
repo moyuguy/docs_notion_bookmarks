@@ -2,11 +2,23 @@
 
 Notion Bookmarks 提供了多种方式来帮助您快速、便捷地收集和整理您喜爱的网站。
 
-## 方法一：浏览器扩展（开发中）
+## 方法一：浏览器扩展（推荐）
 
-我们正在开发一款浏览器扩展，让您可以一键将当前浏览的网页保存到您的 Notion 数据库中。该扩展将自动抓取网站的标题、描述和图标，并允许您快速添加分类和标签。
+### Save to Notion 扩展
 
-*敬请期待！*
+推荐使用 **Save to Notion** Chrome 浏览器扩展来快速收集网站。
+
+**🔗 安装链接：**[Chrome 应用商店](https://chrome.google.com/webstore/detail/save-to-notion/ldmmifpegigmeammaeckplhnjbbpccmm)
+
+**📝 使用步骤：**
+1. 安装扩展后，点击浏览器工具栏中的 Save to Notion 图标
+2. 首次使用需要连接您的 Notion 账户
+3. 选择要保存到的数据库（选择您的"导航链接"数据库）
+4. 扩展会自动抓取当前页面的标题、URL、描述和图标
+5. 您可以添加分类、标签等额外信息
+6. 点击保存即可将网站添加到您的 Notion 数据库
+<img src="./images/save-to-notion.png" alt="Save to Notion 扩展使用界面" width="350">
+
 
 ## 方法二：手动添加
 
@@ -20,9 +32,3 @@ Notion Bookmarks 提供了多种方式来帮助您快速、便捷地收集和整
     -   **描述 (Description)**: 对网站的简短介绍。
     -   **分类 (Category)**: 从关联的分类数据库中选择一个或多个分类。
     -   **标签 (Tags)**: 添加相关的标签，方便搜索和过滤。
-
-## 方法三：使用快捷指令 (iOS)
-
-对于 iOS 用户，您可以创建一个快捷指令，通过分享菜单快速将链接添加到您的 Notion 数据库。这需要您对 Notion API 和快捷指令有基本的了解。
-
-这是一个强大的自定义方式，可以极大地提升您在移动设备上的收藏效率。
